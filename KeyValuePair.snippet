@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Key value Pair</Title>
+      <Shortcut>ApiKP</Shortcut>
+      <Description>Code snippet for adding API Param as formurlencodedcontent for sending an API Request with params</Description>
+      <Author>Kumara Krishnan</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>ParamName</ID>
+          <ToolTip>Parameter Name</ToolTip>
+          <Default>test</Default>
+        </Literal>
+        <Literal>
+          <ID>ParamValue</ID>
+          <ToolTip>Parameter Value</ToolTip>
+          <Default>test</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[
+                new KeyValuePair<string,string>("$ParamName$","$ParamValue$")$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
